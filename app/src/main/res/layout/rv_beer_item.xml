@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/singleRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/userImg"
+            android:src="@drawable/beer"
+            android:paddingTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:background="@drawable/baseline_add_circle_outline_black_24"
+            android:backgroundTint="@color/colorGrey"
+            android:paddingTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignRight="@id/tvStyle"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:text="Beer Name"
+            android:textSize="20sp"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/userImg"
+            android:layout_toEndOf="@+id/userImg"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/tvStyle"
+            android:text="Style"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_alignStart="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/pJobProfiletxt"
+            android:text="ID"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvStyle"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_alignStart="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/pNametxt"
+            android:text="ABV"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pJobProfiletxt"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_alignStart="@+id/tvName" />
+
+
+
+
+        <TextView
+            android:id="@+id/tvOunces"
+            android:text="Ounces"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pNametxt"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_alignStart="@+id/tvName" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/singleRow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2" />
+
+</RelativeLayout>
